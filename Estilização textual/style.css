@@ -1,0 +1,125 @@
+body {
+  width: 1280px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.page-wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#design-archives {
+  display: none;
+}
+
+.intro header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+p {
+  text-indent: 1em; /* Indentação dos parágrafos */
+}
+
+/* 2. Títulos */
+h1 {
+  font-size: 1.8rem;
+  text-align: center; /* Ou right */
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-align: center; /* Ou right */
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center; /* Ou right */
+}
+
+/* 3. Seções de resumo e principal */
+.intro {
+  /* Resumo */
+  text-align: center; /* Ou right */
+}
+
+.explanation p {
+  /* Principal */
+  line-height: 1.5;
+}
+
+/* 4. Abreviaturas */
+abbr {
+  font-variant: small-caps;
+}
+
+.intro h1 {
+  padding-left: 1em;
+}
+
+.intro h2 {
+  padding-right: 1em;
+}
+
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: 1px solid #1f295c;
+  padding-right: 2%;
+  box-sizing: border-box;
+}
+
+#design-selection {
+  position: absolute;
+  top: 560px;
+  left: 62%;
+  width: 35%;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#design-selection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#design-selection li {
+  margin-bottom: 1em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  margin: 4%;
+  padding: 1em;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
