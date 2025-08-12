@@ -5,6 +5,31 @@
   position: relative;
 }
 
+.intro {
+  height: 550px;
+}
+
+#design-archives {
+  display: none;
+}
+
+.intro header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.intro h1 {
+  padding-left: 1em;
+}
+
+.intro h2 {
+  padding-right: 1em;
+}
+
 .explanation {
   width: 60%;
   margin-right: 35%;
@@ -21,4 +46,42 @@
   padding-left: 2%;
   padding-right: 2%;
   box-sizing: border-box;
+  text-align: center;
+}
+
+#design-selection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#design-selection li {
+  margin-bottom: 1em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  margin: 4%;
+  padding: 1em;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #fff;
+  text-decoration: none;
 }
