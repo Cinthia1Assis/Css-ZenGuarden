@@ -1,0 +1,202 @@
+.page-wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.intro {
+  height: 550px;
+}
+
+#design-archives {
+  display: none;
+}
+
+.intro header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.intro h1 {
+  padding-left: 1em;
+}
+
+.intro h2 {
+  padding-right: 1em;
+}
+
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: 1px solid #1f295c;
+  padding-right: 2%;
+  box-sizing: border-box;
+}
+
+#design-selection {
+  position: absolute;
+  top: 350px;
+  left: 62%;
+  width: 35%;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#design-selection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#design-selection li {
+  margin-bottom: 1em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  margin: 4%;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 0.5em;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+  gap: 2%;
+}
+
+.benefits h3 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.benefits p {
+  width: 70%;
+}
+
+.participation {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+  gap: 2%;
+}
+
+.participation h3 {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.participation p {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+  .benefits,
+  .participation {
+    flex-direction: column;
+  }
+
+  .benefits h3,
+  .benefits p,
+  .participation h3,
+  .participation p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .explanation {
+    width: 100%;
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  #design-selection {
+    position: static;
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+
+/* ===================================================
+   Exercícios - Pseudo-classes e pseudo-elementos
+   =================================================== */
+
+/* EXERCÍCIO 1: Customização dos links */
+a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+a:visited {
+  color: #663399;
+  font-weight: normal;
+}
+
+/* EXERCÍCIO 2: Primeira letra do primeiro parágrafo na seção principal */
+#zen-supporting p:first-of-type::first-letter {
+  font-size: 3em;
+  font-family: "Courier New", monospace;
+  float: left;
+  line-height: 1;
+  padding-right: 0.1em;
+}
+
+/* EXERCÍCIO 3: Bordas nos itens do menu de design */
+#design-selection li {
+  border-top: 1px solid #ccc;
+  padding: 0.5em 0;
+}
+
+#design-selection li:last-child {
+  border-bottom: 1px solid #ccc;
+}
